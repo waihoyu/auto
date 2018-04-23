@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width:300px;height:300px;
+        margin:200px auto;position: relative;">
+        <div style="color:#666;position: absolute;
+          top:-25px;width:230px;left:-10px">
+            0,0
+            <span style="float:right;">x</span>
+        </div>
+        <div style="color:#666;position: absolute;
+          top:200px;left:-15px;width:230px">
+          0,0<span style="float:right;">y</span>
+        </div>
+        <!-- svg  矢量图标签，有一些数学图形绘制标签
+        绘制标签来自于命名空间      
+        -->
+        <svg width='400' height="400" viewbox="0 0 200 200" xmlns="http://www.w3c.org/2000/svg" style="position: absolute;left:-40px;top:-40px;">
+            <line x1="20" y1="40" x2="120" y2="40" style="stroke: red;stroke-dasharray: 2 2"/>
+            <line x1="20" y1="60" x2="120" y2="60" style="stroke: red;stroke-dasharray: 2 2"/>
+            <line x1="20" y1="80" x2="120" y2="80" style="stroke: red;stroke-dasharray: 2 2"/>
+            <line x1="20" y1="100" x2="120" y2="100" style="stroke: red;stroke-dasharray: 2 2"/>
+            <!--y坐标轴辅助线-->
+            <line x1="40" y1="20" x2="40" y2="120" style="stroke: red;stroke-dasharray: 2 2"/>
+            <line x1="60" y1="20" x2="60" y2="120" style="stroke: red;stroke-dasharray: 2 2"/>
+            <line x1="80" y1="20" x2="80" y2="120" style="stroke: red;stroke-dasharray: 2 2"/>
+            <line x1="100" y1="20" x2="100" y2="120" style="stroke: red;stroke-dasharray: 2 2"/>
+        </svg>
+    </div>
+</body>
+
+</html>
