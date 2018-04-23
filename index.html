@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-
-    .box{
-        width: 500px;
-        height: 500px;
-        background-color: red;
-    }
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: white;
+        }
     </style>
 </head>
+
 <body>
     <div class="box">
+        <svg width='400' height="400" viewbox="0 0 200 200" xmlns="http://www.w3c.org/2000/svg" style="position: absolute;left:-40px;top:-40px;">
+        </svg>
+
+        <svg width='200' height="200" viewbox="0 0 100 100" xmlns="http://www.w3c.org/2000/svg" style="position: absolute;left:0px;top:0px;">
+            <!-- canvas 复杂  path 路径 
+                画笔  stroke 画边线
+            -->
+            <path d="M 20 40 L 80 40 L 80 90 " style="fill:fuchsia;"></path>
+        </svg>
+
     </div>
 </body>
+
 </html>
