@@ -24,6 +24,43 @@
         </div>
 
     </div>
+    <script>
+        //函数 作用域 立即执行函数
+        //js3d  命名空间  减少了全局变量数量（污染） 只有一个  
+        //js3d 形成命名空间;
+        //
+        var js3d = (function() {
+            var book = document.querySelector('.book');
+            var page = document.querySelector('.front-cover');
+            var hold = false;
+            var pageSize = 300;
+            var centerPoint = window.innerWidth / 2;
+            var clamp = function(val, min, max) {
+                //数学函数，两值取大值
+                return Math.max(min, Math.min(val, max))
+            }
+            page.onmousedown = function() {
+                hold = true;
+            }
+            page.onmouseup = function() {
+                hold = false;
+            }
+            window.onmousemove = function(evt) {
+                    console.log(evt);
+                    if (!hold) {
+                        return;
+                    }
+                    var angle = clamp((centerPoint - evt.pageX + pageSize) / pageSize * -90, -180, 0);
+                    //在之前的倾斜度上，再倾斜。
+                    book.style.transform = 'rotateX(' + (60 + angle / 8) + 'deg';
+                    page.style.transform = 'rotateY(' + (angle) + 'deg';
+                }
+                // return {
+                //     book,
+                //     page
+                // }
+        })()
+    </script>
 </body>
 
-</html>
+</html>)

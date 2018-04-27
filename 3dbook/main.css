@@ -94,5 +94,5 @@ body {
 
 .flip {
     transform: rotateY(180deg);
-    left: 100%;
+    /* left: 100%; */
 }
